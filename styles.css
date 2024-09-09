@@ -515,3 +515,99 @@ body {
         background-size: 100%; /* Vuelve al tamaño inicial */
     }
 }
+
+
+/* Media Queries */
+/* Media Queries for responsiveness */
+@media (max-width: 1450px) {
+    body{
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: none;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    .start img {
+        max-width: 60%;
+    }
+
+    .gallery-pics {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .logo img {
+        max-width: 150px;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header h2 {
+        font-size: 0.8rem;
+    }
+    .start img {
+        max-width: 80%;
+    }
+    .description, .activities, .join, .contact {
+        padding: 20px 5%;
+    }
+    .gallery-pics {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+        nav {
+            display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+            justify-content: space-around; /* Espacio entre los elementos */
+            align-items: center; /* Alineación vertical de los elementos */
+            flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+        }
+        
+        nav a {
+            font-size: 14px;
+            display: inline-block; /* Asegura que los enlaces se alineen horizontalmente */
+            padding: 5px; /* Añade algo de espacio alrededor de cada enlace */
+            text-decoration: none; /* Quita el subrayado de los enlaces */
+        }
+    
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header h2 {
+        font-size: 0.7rem;
+    }
+    .start img {
+        max-width: 100%;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    nav a {
+        font-size: 12px;
+        display: inline-block; /* Asegura que los enlaces se alineen horizontalmente */
+        padding: 5px; /* Añade algo de espacio alrededor de cada enlace */
+        text-decoration: none; /* Quita el subrayado de los enlaces */
+    }
+
+    .gallery-pics {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 20px;
+    }
+
+    table{
+        font-size: 14px;
+    }
+}
+
