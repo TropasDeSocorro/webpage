@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociación Tropas de Socorro</title>
+    <link rel="shortcut icon" href="./img/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Graduate&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src=".\src\img\logo.png" alt="Logo Asociación Tropas de Socorro">
+        </div>
+        <h1>ASOCIACIÓN TROPAS DE SOCORRO</h1>
+        <h2>ASOCIACIÓN INSCRITA EN EL REGISTRO NACIONAL DE ASOCIACIONES EN LA SECCIÓN 1ª CON EL NÚMERO 62248</h2>
+    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#inicio" class="scroll-link">Inicio</a></li>
+            <li><a href="#fines" class="scroll-link">Fines</a></li>
+            <li><a href="#actividades" class="scroll-link">Actividades</a></li>
+            <li><a href="#galeria" class="scroll-link">Galería</a></li>
+            <li><a href="#unete" class="scroll-link">Únete</a></li>
+            <li><a href="#contacto" class="scroll-link">Contacto</a></li>
+            <li><a href="https://www.facebook.com/groups/1436113493253925" target="_blank">
+                <i class="fab fa-facebook-square fa-2x"></i> 
+            </a></li>
+        </ul>
+    </nav>
+
+    <div class="background-bg">
+        <main>
+            <section id="inicio" class="start">
+                <img src=".\src\img\members-1.png" alt="Miembros">
+                <p>Algunos de los integrantes de la asociación.</p> 
+            </section>
+    
+            <section id="fines" class="description">
+                <h3 class="title">Fines de la Asociación</h3>
+                <p>La Asociación Tropas de Socorro tiene como objetivo principal el estudio, recopilación y divulgación de información histórica sobre las Tropas de Socorro de Cruz Roja Española, Cruz Roja Juventud y Cruz Roja del Mar. Buscamos preservar la memoria y el legado de estas organizaciones a través de la investigación, la conservación de objetos históricos y la organización de actividades culturales.</p>
+                <p>No solo forman parte de la asociación miembros de los cuerpos ya mencionados arriba, sino que también nos acompañan integrantes que no han pertenecido a ningún cuerpo militar o policial. Aquí, todo el mundo con ganas de aportar algo es libre de participar.</p>
+                <p>Si estás interesado/a en entender más a fondo nuestros fines y objetivos, puedes consultarlos en nuestros <a href=".\src\docs\ESTATUTOS ASOCIACION TROPAS SOCORRO.pdf" target="_blank">ESTATUTOS DE ASOCIACIÓN</a></p>
+            </section>
+    
+            <section id="actividades" class="activities">
+                <h3 class="title">Próximas Actividades</h3>
+                <table>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Actividad</th>
+                    </tr>
+                    <tr>
+                        <td>21 de Septiembre</td>
+                        <td><a href="https://iberradio.es" target="_blank">IBERRADIO Feria de las Radiocomunicaciones, Ávila</a></td>
+                    </tr>
+                    <tr>
+                        <td>23 y 24 de Noviembre</td>
+                        <td><a href="https://nosolomilitaria.es" target="_blank">Militaria  Pabellón de Cristal Casa de Campo Madrid</a></td>
+                    </tr>
+                </table>
+            </section>
+    
+            <section id="galeria" class="gallery">
+                <h3 class="title">Galería</h3>
+                <div class="gallery-pics">
+                    <img src=".\src\\img\gallery-1.png" alt="Imagen Principal">
+                    <img src=".\src\img\gallery-2.png" alt="Imagen Principal">
+                    <img src=".\src\img\gallery-3.png" alt="Imagen Principal">
+                    <img src=".\src\img\gallery-4.png" alt="Imagen Principal">
+                    <img src=".\src\img\gallery-5.png" alt="Imagen Principal">
+                    <img src=".\src\img\gallery-6.png" alt="Imagen Principal">
+                    <img src=".\src\img\gallery-7.png" alt="Imagen Principal">
+                    <img src=".\src\img\gallery-8.png" alt="Imagen Principal">
+                    <img src=".\src\img\members-2.png" alt="Imagen Principal">
+
+                </div>
+            </section>
+    
+            <section id="unete" class="join">
+                <h3 class="title">Únete a Nosotros</h3>
+                <h4>¿Buscas formar parte de esta asociación? </h4>
+                <p>No dudes en ponerte en contacto con nosotros. Somos una organización sin ánimo de lucro y siempre estamos buscando personas comprometidas que quieran contribuir a preservar la historia y el legado de las Tropas de Socorro.</p>
+                <p>Puedes rellenar la ficha de inscripción a continuación y enviárnosla a nuestro correo si buscas darte de alta en la asociación.</p>
+                <a href=".\src\docs\FICHA ASOCIACION.pdf" target="_blank">Ficha de inscripción</a>
+            </section>
+    
+            <section id="contacto" class="contact">
+                <h3 class="title">Contacto</h3>
+                <p>Si tienes alguna pregunta o deseas más información, puedes contactarnos de cualquiera de estas maneras:</p>
+                <p>Correo: <a href="mailto:asociaciontropassocorro@gmail.com">asociaciontropassocorro@gmail.com</a></p>
+                <p>Teléfono: <b id="phone-number-1" onclick="copyToClipboard('phone-number-1')">602 46 37 71</b></p>
+                <p id="notification-1" style="display: none; color: rgb(70, 70, 70); font-size: 0.9em; margin-top: 5px;"> · Número copiado al portapapeles</p>
+                <p>Teléfono Delegación Campillo de Azaba: <b id="phone-number-2" onclick="copyToClipboard('phone-number-2')">677 74 01 51</b></p>
+                <p id="notification-2" style="display: none; color: rgb(70, 70, 70); font-size: 0.9em; margin-top: 5px;"> · Número copiado al portapapeles</p>
+            </section>
+        </main>
+    
+    </div>
+    <footer>
+        <p>&copy; 2024 Asociación Tropas de Socorro. Todos los derechos reservados.</p>
+        <a href="https://www.facebook.com/groups/1436113493253925" target="_blank">
+            <i class="fab fa-facebook-square fa-2x"></i> <!-- Icono de Facebook -->
+        </a>
+        <a href="mailto:asociaciontropassocorro@gmail.com">
+            <i class="fas fa-envelope fa-2x"></i> <!-- Icono de Gmail -->
+        </a>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
