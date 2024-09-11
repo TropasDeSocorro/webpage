@@ -30,7 +30,7 @@ body {
 /* Header */
 header {
     background: linear-gradient(to right, rgba(28, 40, 51, 0.7), rgba(52, 73, 94, 0.7)),
-    url('./src/img/banner.png');
+    url('./src/img/banner.webp');
     background-size: cover;
     background-position: center;
     color: #F7F9F9;
@@ -478,7 +478,7 @@ footer a:hover {
 
 /* Background with Animation */
 body {
-    background-image: url('./src/img/background.png');
+    background-image: url('./src/img/background.webp');
     background-size: 100%; /* Ajuste inicial del tamaño de la imagen */
     background-attachment: fixed; /* Fija la imagen mientras se hace scroll */
     background-position: center; /* Centra la imagen */
