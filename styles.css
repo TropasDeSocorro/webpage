@@ -518,6 +518,9 @@ body {
         font-size: 3rem;
         transition: all 0.3s ease; /* Transición suave para cambios */
     }
+    .join h4 {
+        font-size: 1.85rem;
+    }
     .start img {
         max-width: 60%;
         height: auto; /* Asegura que no se distorsione la imagen */
