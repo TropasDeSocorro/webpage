@@ -2,7 +2,6 @@
 :root {
     --main-bg: rgba(255, 255, 255, 0.8); /* Aumenta la opacidad del fondo */
     --secondary-bg: rgba(0, 0, 0, 0.7); /* Aumenta la opacidad del fondo */
-    --secondary-bg: rgba(0, 0, 0, 0.7); /* Aumenta la opacidad del fondo */
     --primary-color: #1b1b1b; /* Cambia el color principal a un tono más claro */
     --secondary-color: #F7F9F9; /* Cambia el color principal a un tono más claro */
     --highlight-color: #c94539;
@@ -477,17 +476,6 @@ footer a:hover {
     }
 }
 
-@keyframes slideInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /* Background with Animation */
 body {
     background-image: url('./src/img/background.png');
@@ -520,23 +508,25 @@ body {
 /* Media Queries */
 /* Media Queries for responsiveness */
 @media (max-width: 1450px) {
-    body{
+    body {
         background-size: cover;
         background-repeat: no-repeat;
         animation: none;
+        transition: all 0.3s ease; /* Transición suave para cambios */
     }
     header h1 {
         font-size: 3rem;
+        transition: all 0.3s ease; /* Transición suave para cambios */
     }
     .start img {
         max-width: 60%;
+        height: auto; /* Asegura que no se distorsione la imagen */
+        transition: all 0.3s ease;
     }
-
     .gallery-pics {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 40px;
     }
-
     nav ul li {
         margin: 0 10px;
     }
@@ -548,15 +538,19 @@ body {
     }
     header h1 {
         font-size: 2.5rem;
+        transition: all 0.3s ease;
     }
     header h2 {
         font-size: 0.8rem;
+        transition: all 0.3s ease;
     }
     .start img {
         max-width: 80%;
+        height: auto;
+        transition: all 0.3s ease;
     }
     .description, .activities, .join, .contact {
-        padding: 20px 5%;
+        padding: 20px 5vw; /* Padding dinámico usando vw */
     }
     .gallery-pics {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -564,50 +558,54 @@ body {
     }
     .title {
         font-size: 2.5rem;
+        transition: all 0.3s ease;
     }
-        nav {
-            display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
-            justify-content: space-around; /* Espacio entre los elementos */
-            align-items: center; /* Alineación vertical de los elementos */
-            flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
-        }
-        
-        nav a {
-            font-size: 14px;
-            display: inline-block; /* Asegura que los enlaces se alineen horizontalmente */
-            padding: 5px; /* Añade algo de espacio alrededor de cada enlace */
-            text-decoration: none; /* Quita el subrayado de los enlaces */
-        }
-    
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    nav a {
+        font-size: 14px;
+        display: inline-block;
+        padding: 5px;
+        text-decoration: none;
+    }
 }
 
 @media (max-width: 480px) {
+    body {
+        font-size: min(1.6rem, 5vw); /* Ajuste de fuente dinámico */
+    }
     header h1 {
         font-size: 2rem;
+        transition: all 0.3s ease;
     }
     header h2 {
         font-size: 0.7rem;
+        transition: all 0.3s ease;
     }
     .start img {
         max-width: 100%;
+        height: auto;
+        transition: all 0.3s ease;
     }
     .title {
         font-size: 2rem;
+        transition: all 0.3s ease;
     }
     nav a {
         font-size: 12px;
-        display: inline-block; /* Asegura que los enlaces se alineen horizontalmente */
-        padding: 5px; /* Añade algo de espacio alrededor de cada enlace */
-        text-decoration: none; /* Quita el subrayado de los enlaces */
+        display: inline-block;
+        padding: 5px;
+        text-decoration: none;
     }
-
     .gallery-pics {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         gap: 20px;
     }
-
-    table{
+    table {
         font-size: 14px;
     }
 }
-

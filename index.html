@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asociación Tropas de Socorro, preservando la memoria y el legado de las Tropas de Cruz Roja Española, Juventud y Mar.">
+    <meta name="keywords" content="Cruz Roja, Tropas de Socorro, Asociación, Historia, Actividades, Cruz Roja Juventud, Cruz Roja del Mar, Médico, Doctor, Socorro">
+    <meta name="author" content="Asociación Tropas de Socorro">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Asociación Tropas de Socorro">
+    <meta property="og:description" content="Preservamos la memoria de las Tropas de Cruz Roja y organizamos actividades culturales. Únete a nosotros.">
+    <meta property="og:image" content="https://asociaciontropassocorro.es/src/img/logo.png">
+    <meta property="og:url" content="https://asociaciontropassocorro.es">
+    <meta name="twitter:card" content="summary_large_image">
     <title>Asociación Tropas de Socorro</title>
     <link rel="shortcut icon" href="./src/img/logo.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" defer>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Graduate&display=swap" rel="stylesheet">
@@ -16,7 +25,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src=".\src\img\logo.png" alt="Logo Asociación Tropas de Socorro">
+            <img src=".\src\img\logo.png" alt="Logo Asociación Tropas de Socorro" loading="lazy">
         </div>
         <h1>ASOCIACIÓN TROPAS DE SOCORRO</h1>
         <h2>ASOCIACIÓN INSCRITA EN EL REGISTRO NACIONAL DE ASOCIACIONES EN LA SECCIÓN 1ª CON EL NÚMERO 62248</h2>
@@ -39,7 +48,7 @@
     <div class="background-bg">
         <main>
             <section id="inicio" class="start">
-                <img src=".\src\img\members-1.png" alt="Miembros">
+                <img src=".\src\img\members-1.png" alt="Miembros de la Asociación Tropas de Socorro" loading="lazy">
                 <p>Algunos de los integrantes de la asociación.</p> 
             </section>
     
@@ -52,44 +61,57 @@
     
             <section id="actividades" class="activities">
                 <h3 class="title">Próximas Actividades</h3>
-                <table>
-                    <tr>
-                        <th>Fecha</th>
-                        <th>Actividad</th>
-                    </tr>
-                    <tr>
-                        <td>21 de Septiembre</td>
-                        <td><a href="https://iberradio.es" target="_blank">IBERRADIO Feria de las Radiocomunicaciones, Ávila</a></td>
-                    </tr>
-                    <tr>
-                        <td>23 y 24 de Noviembre</td>
-                        <td><a href="https://nosolomilitaria.es" target="_blank">Militaria  Pabellón de Cristal Casa de Campo Madrid</a></td>
-                    </tr>
+                <table aria-label="Tabla de próximas actividades" role="table">
+                    <thead>
+                        <tr role="row">
+                            <th role="columnheader">Fecha</th>
+                            <th role="columnheader">Actividad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr itemscope itemtype="https://schema.org/Event" role="row">
+                            <td role="cell">
+                                <time itemprop="startDate" datetime="2024-09-21">21 de Septiembre</time>
+                            </td>
+                            <td role="cell">
+                                <a href="https://iberradio.es" target="_blank" itemprop="url" title="Visitar la página del evento IBERADIO" rel="noopener noreferrer">IBERRADIO Feria de las Radiocomunicaciones, Ávila</a>
+                            </td>
+                        </tr>
+                        <tr itemscope itemtype="https://schema.org/Event" role="row">
+                            <td role="cell">
+                                <time itemprop="startDate" datetime="2024-11-23">23 y 24 de Noviembre</time>
+                            </td>
+                            <td role="cell">
+                                <a href="https://nosolomilitaria.es" target="_blank" itemprop="url" title="Visitar la página del evento Militaria en Madrid" rel="noopener noreferrer">Militaria Pabellón de Cristal Casa de Campo, Madrid</a>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </section>
+            
     
             <section id="galeria" class="gallery">
                 <h3 class="title">Galería</h3>
                 <div class="gallery-pics">
                     <img src=".\src\\img\gallery-1.png" alt="Imagen Principal">
-                    <img src=".\src\img\gallery-2.png" alt="Imagen Principal">
-                    <img src=".\src\img\gallery-3.png" alt="Imagen Principal">
-                    <img src=".\src\img\gallery-4.png" alt="Imagen Principal">
-                    <img src=".\src\img\gallery-5.png" alt="Imagen Principal">
-                    <img src=".\src\img\gallery-6.png" alt="Imagen Principal">
-                    <img src=".\src\img\gallery-7.png" alt="Imagen Principal">
-                    <img src=".\src\img\gallery-8.png" alt="Imagen Principal">
-                    <img src=".\src\img\members-2.png" alt="Imagen Principal">
+                    <img src=".\src\img\gallery-2.png" alt="Equipamiento de la Asociación en el Stand de Militaria" loading="lazy">
+                    <img src=".\src\img\gallery-3.png" alt="Muestra de trajes de la Asociación en un pabellón" loading="lazy">
+                    <img src=".\src\img\gallery-4.png" alt="Utensilios de las antiguas Tropas de Socorro" loading="lazy">
+                    <img src=".\src\img\gallery-5.png" alt="Equipamiento y bicicleta de la Cruz Roja" loading="lazy">
+                    <img src=".\src\img\gallery-6.png" alt="Uniformes especializados de las Tropas de Socorro" loading="lazy">
+                    <img src=".\src\img\gallery-7.png" alt="Maniquí y pósters de la Asociación" loading="lazy">
+                    <img src=".\src\img\gallery-8.png" alt="Equipo de radio antiguo de la Cruz Roja" loading="lazy">
+                    <img src=".\src\img\members-2.png" alt="Algunos integrantes de la Asociación en la exposición de los uniformes" loading="lazy">
 
                 </div>
             </section>
     
             <section id="unete" class="join">
                 <h3 class="title">Únete a Nosotros</h3>
-                <h4>¿Buscas formar parte de esta asociación? </h4>
+                <h4>¿Buscas formar parte de esta Asociación? </h4>
                 <p>No dudes en ponerte en contacto con nosotros. Somos una organización sin ánimo de lucro y siempre estamos buscando personas comprometidas que quieran contribuir a preservar la historia y el legado de las Tropas de Socorro.</p>
                 <p>Puedes rellenar la ficha de inscripción a continuación y enviárnosla a nuestro correo si buscas darte de alta en la asociación.</p>
-                <a href=".\src\docs\FICHA.pdf" target="_blank">Ficha de inscripción</a>
+                <a href=".\src\docs\FICHA.pdf" target="_blank" role="link">Ficha de inscripción</a>
             </section>
     
             <section id="contacto" class="contact">
